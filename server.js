@@ -21,7 +21,9 @@ mongoose.connect(
   process.env.MONGODB_URI || "mongodb+srv://ma-wong:Lasagna1@cluster0.pv9bv.mongodb.net/google-books?retryWrites=true&w=majority",
   {
     useCreateIndex: true,
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false
   }
 );
 
